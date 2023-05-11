@@ -1,0 +1,121 @@
+@import '../../styles/contants.scss';
+
+.hero-wrapper{
+    overflow: hidden;
+    padding: 2rem 4%;
+
+    .container{
+        position: relative;
+        z-index: 1;
+
+        .upperElement{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            @media screen and (max-width:450px){
+                gap: 1rem;
+                text-align: center;
+                justify-content: center;
+            }
+
+            @media screen and (max-width:800px) {
+                .primaryText {
+                    font-size: 2rem;
+                }
+                .secondaryText {
+                    line-height: 40px;
+                    font-size: 1.1rem;
+                }
+            }
+            @media screen and (max-width:450px){
+                .primaryText {
+                    font-size: 2.5rem;
+                }
+                
+            }
+        
+        }
+        .lowerElement{
+            margin-top: 12rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            @media screen and (max-width:800px){
+                margin-top: 4rem;
+                gap: 2rem;
+            }
+            @media screen and (max-width:450px){
+                justify-content: center;
+            }
+            
+            .experience{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                >:nth-child(2){
+                    line-height: 25px;
+                }
+            }
+            .certfication{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                img{
+                    margin-bottom: 1rem;
+                    width: 3.5rem;
+                }
+                // @media screen and (max-width:450px) {
+                //     display: flex;
+                //     align-items: flex-start;
+                    
+                // }
+            }
+        }
+        .person{
+            position: absolute;
+            bottom: -2rem;
+            margin: auto;
+            background-image: url('../splash.png');
+            background-repeat: no-repeat;
+            background-size: 23rem;
+            left: 33%;
+
+            @media screen and (max-width:800px){
+                position: relative;
+                left: 0;
+                background-size: 20rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-position: bottom;
+            }
+            // @media screen and (max-width:450px){
+            //     background-size: 14rem;
+              
+            // }
+            img{
+                margin-bottom: -5px;
+                @media screen and (max-width:800px){
+                    width: 23rem;
+                }
+                // @media screen and (max-width:450px){
+                //     width: 20rem;
+                // }
+            }
+        }
+        .email{
+            position: absolute;
+            top: 50%;
+            left: 0;
+            color: orange;
+            @media screen and (max-width:800px){
+                position: relative;
+            }
+            @media screen and (max-width:450px){
+                display: none;
+            }
+        }
+    }
+}

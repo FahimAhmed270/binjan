@@ -1,0 +1,88 @@
+.testiminial{
+    position: relative;
+    padding: 4rem 4%;
+
+    @media screen and (max-width:800px) {
+        padding: 2rem;
+    }
+    .heading{
+        text-align: center;
+        p{
+            line-height: 30px;
+        }
+        >:nth-child(2){
+            margin-top: 2rem;
+            margin-bottom: 0.1rem;
+        }
+    }
+    .comments {
+        padding: 2rem 0;
+        .slider {
+            .slick-list {
+                margin: 0 -7px;
+                box-sizing: initial;
+                padding: 80px 0px;
+                overflow-y: visible;
+                .slick-next{
+                    right: 0;
+                    background: #000;
+                    color: #fff;
+                }
+                .slick-arrow .slick-prev{
+                    left: 0;
+                }
+                
+                & .slick-slide>div {
+                    padding: 0 20px;
+                }
+                & .slick-slide.slick-active.slick-current + .slick-slide{
+                    transition: all 1000ms ease-out;
+                        scale: 1.1;
+                        transform: translateY(-30px)
+                   
+                }
+            }
+        }
+        .person{
+            box-shadow: rgb(0 0 0 / 5%) -3px 11px 13px 0px;
+            padding: 2rem;
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 1rem;
+            background: #fff;
+            border-radius: 20px;
+            position: relative;
+            img{
+                width: 3.5rem;
+                height: 3.5rem;
+                margin: auto;
+                border-radius: 100%;
+                position: absolute;
+                top: -2rem;
+            }
+            p{
+                font-size: 0.9rem;
+                line-height: 25px;
+            }
+            hr{
+                width: 100%;
+                border: .2px solid rgb(234, 234, 234);
+            }
+            .bio{
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+                text-align: center;
+                >:nth-child(1){
+                    font-weight: 600;
+                }
+                >:nth-child(2){
+                    font-size: 0.7rem;
+                    color:  rgb(172, 172, 172);
+                }
+            }
+        }
+    }
+}
